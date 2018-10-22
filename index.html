@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>Mustafa Ahmed Portfolio </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<body class="scroll-animations">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min animated" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Full-Stack <span class="w3-hide-small">WEB</span> DEVELOPER</span>
+        </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64 animated" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>I love programming</em></p>
+        <p>
+          Since the internet was introduced to me at an early age, I always aspired to use the internet to benefit myself or other people. I realised that the internet is a powerful tool capable of solving any problem. Whenever using the internet I always find myself analysing the design and functionality of websites - how they could be improved, what makes them successful.
+          I became fascinated with web design when I got my first computer several years ago, spending hours experimenting with CSS and HTML and JS coding until I became a full stack developer.
+        </p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Mustafa Ahmed</b></p>
+                <img src="me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="350">
+    </div>
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <p>Welcome to my website. I am really happy with your visit you can know a lot about me and if you want more information you can find my contact info down this page.
+                    the site is divided in few sections take your time to see it and I'll be very happy if you have any suggestions</p>
+                </div>
+            </div>
+            <p class="w3-large w3-center w3-padding-16">Skills:</p>
+            <p class="w3-wide">JavaScript</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+            </div>
+            <p class="w3-wide">Front-end Freamworks (JQeury, AngularJs, Angular)</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+            </div>
+            <p class="w3-wide">Programming (NodeJs, PHP, Python, C, C++)</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+            </div>
+            <p class="w3-wide">Django & Laravel</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+            </div>
+        </div>
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+            </div>
+        </div>
+        <!-- Container (Portfolio Section) -->
+        <div class="w3-content w3-container w3-padding-64 animated" id="portfolio">
+            <h3 class="w3-center">MY WORK</h3>
+            <p class="w3-center"><em>Here are some of my deployed projects<br> Click on the images to view the WEBSITE</em></p><br>
+            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m3">
+                    <a href="https://bgprograme.herokuapp.com/">
+                    <img src="django.svgz" style="width:100%" class="w3-hover-opacity" alt="Django Blog">
+                  </a>
+                </div>
+                <div class="w3-col m3">
+                    <a href="https://bgprograme.github.io/">
+                    <img src="frontend.png" style="width:100%" class="w3-hover-opacity" alt="Front-end Page">
+                  </a> </div>
+                <div class="w3-col m3">
+                    <a href="https://meoschat.herokuapp.com/">
+                    <img src="nodejs.jpg" style="width:100%" class="w3-hover-opacity" alt="NodeJs Chat app">
+                  </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- Third Parallax Image with Portfolio Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+            </div>
+        </div>
+        <!-- Container (Contact Section) -->
+        <div class="w3-content w3-container w3-padding-64 scroll-animations animated" id="contact">
+            <p class="w3-center"><em>I'd love your feedback!</em></p>
+            <div class="w3-row w3-padding-32 w3-section">
+                <div class="w3-col m8 w3-panel">
+                    <div class="w3-large w3-margin-bottom">
+                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +249124141253<br>
+                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mohammedbalila11@gmail.com<br>
+                    </div>
+                    <!-- <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p> -->
+                    <!-- <form action="mail.php" method="POST">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="name">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="message">
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </footer>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
